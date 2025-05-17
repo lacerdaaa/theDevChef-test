@@ -1,10 +1,10 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { blogPosts } from '../data/mockData';
 import { Calendar, User, Tag } from 'lucide-react';
+import BlogPostCard from '../components/BlogPostCard';
 
 const BlogPostDetail = () => {
   const { slug } = useParams<{ slug: string }>();

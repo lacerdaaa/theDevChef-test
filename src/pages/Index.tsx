@@ -6,7 +6,7 @@ import HeroSection from '../components/HeroSection';
 import RecipeCard from '../components/RecipeCard';
 import BlogPostCard from '../components/BlogPostCard';
 import { recipes, blogPosts } from '../data/mockData';
-import { ArrowRight, ChefHat, Code, Utensils } from 'lucide-react';
+import { ArrowRight, ChefHat, Code, Utensils, BookOpen, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Index = () => {
@@ -19,9 +19,46 @@ const Index = () => {
     <div className="flex flex-col min-h-screen">
       <Header />
       
-      <main className="flex-grow pt-16">
+      <main className="flex-grow">
         {/* Hero Section */}
         <HeroSection />
+        
+        {/* Mock Examples Preview Section */}
+        <section className="py-12 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="font-playfair font-bold text-2xl mb-6 text-center">Explore nossos exemplos</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <Link 
+                to="/blog/recursividade-pao-sourdough" 
+                className="flex flex-col items-center p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-all"
+              >
+                <FileText className="w-12 h-12 text-chef-red mb-4" />
+                <h3 className="font-playfair font-bold text-xl mb-2">Exemplo de Post do Blog</h3>
+                <p className="text-gray-600 text-center mb-4">
+                  Veja como ficam os artigos em nosso blog, com formatação rica e elementos de código.
+                </p>
+                <span className="flex items-center text-chef-red">
+                  Ver exemplo <ArrowRight className="ml-1 w-4 h-4" />
+                </span>
+              </Link>
+              
+              <Link 
+                to="/recipe/coq-au-vin" 
+                className="flex flex-col items-center p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-all"
+              >
+                <BookOpen className="w-12 h-12 text-code-blue mb-4" />
+                <h3 className="font-playfair font-bold text-xl mb-2">Exemplo de Receita</h3>
+                <p className="text-gray-600 text-center mb-4">
+                  Confira como são apresentadas nossas receitas, com instruções detalhadas e dicas de programador.
+                </p>
+                <span className="flex items-center text-code-blue">
+                  Ver exemplo <ArrowRight className="ml-1 w-4 h-4" />
+                </span>
+              </Link>
+            </div>
+          </div>
+        </section>
         
         {/* About Section */}
         <section className="py-20 bg-white">
