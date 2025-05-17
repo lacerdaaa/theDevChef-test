@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +98,40 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+  
+  code {
+    @apply font-sourcecode bg-gray-100 px-1 py-0.5 rounded dark:bg-gray-800;
+  }
+  
+  .recipe-step::before {
+    content: "//";
+    @apply text-chef-red mr-2 font-sourcecode;
+  }
+}
+
+@layer components {
+  .card-recipe {
+    @apply relative overflow-hidden rounded-lg transition-all duration-300 hover:shadow-lg;
+  }
+  
+  .card-recipe:hover img {
+    @apply scale-105;
+  }
+  
+  .btn-primary {
+    @apply bg-chef-red hover:bg-red-900 text-white font-semibold py-2 px-4 rounded transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply bg-code-blue hover:bg-blue-900 text-white font-semibold py-2 px-4 rounded transition-colors;
+  }
+  
+  .tag {
+    @apply inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full mr-1 mb-1;
   }
 }
