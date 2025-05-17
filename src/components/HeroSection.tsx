@@ -5,7 +5,7 @@ import { ChefHat, Code, ArrowRight } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <div className="relative min-h-[80vh] flex items-center bg-gradient-to-br from-white to-gray-100 overflow-hidden">
+    <div className="relative h-screen flex items-center bg-gradient-to-br from-white to-gray-100 overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="w-full h-full max-w-7xl mx-auto relative">
