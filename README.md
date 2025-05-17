@@ -1,73 +1,34 @@
-# Welcome to your Lovable project
+from pathlib import Path
 
-## Project info
+# Conteúdo do README.md
+readme_content = """# 🍳 theDevChef
 
-**URL**: https://lovable.dev/projects/9fea52fb-ddce-46ca-a05f-8e44ee33ee9c
+**theDevChef** é um blog único que mistura duas grandes paixões: **programação** e **gastronomia**. Aqui você encontra desde dicas técnicas de desenvolvimento (com foco em Angular e Java) até receitas caseiras que vão do simples ao sofisticado — tudo com uma pitada de criatividade e paixão.
 
-## How can I edit this code?
+> _"Porque quem codifica também cozinha."_ 👨‍🍳👨‍💻
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🔥 O que você vai encontrar
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9fea52fb-ddce-46ca-a05f-8e44ee33ee9c) and start prompting.
+- **Receitas testadas e aprovadas** 🍝  
+  Passo a passo com fotos, dicas práticas e sugestões de variação.
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Tutoriais de Programação** 💻  
+  Conteúdo técnico com foco em Angular, Java, boas práticas e produtividade no desenvolvimento.
 
-**Use your preferred IDE**
+- **Reflexões & Histórias** 🧠  
+  Posts que exploram o paralelo entre codar e cozinhar — criatividade, disciplina, tentativa e erro.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📌 Tecnologias utilizadas
 
-Follow these steps:
+O site foi desenvolvido com:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Angular** – para a interface moderna e responsiva.
+- **Java (Spring Boot)** – no backend, garantindo performance e escalabilidade.
+- **Markdown** – para facilitar a escrita e edição dos posts.
+- **PostgreSQL** - para o banco de dados.
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/9fea52fb-ddce-46ca-a05f-8e44ee33ee9c) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
