@@ -5,6 +5,9 @@ import Footer from '../components/Footer';
 import { blogPosts } from '../data/mockData';
 import { Calendar, User, Tag } from 'lucide-react';
 import BlogPostCard from '../components/BlogPostCard';
+import CodeSnippet from '../components/blog/CodeSnippet';
+import BlogStep from '../components/blog/BlogStep';
+import BlogContent from '../components/blog/BlogContent';
 
 const BlogPostDetail = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -28,11 +31,11 @@ const BlogPostDetail = () => {
     );
   }
 
-  // For demonstration purposes, let's create a richer content for the first blog post
+  // Para demonstração, vamos criar um conteúdo mais rico para o primeiro post do blog
   const renderRichContent = () => {
     if (post.id === '1') {
       return (
-        <div className="space-y-6">
+        <BlogContent>
           <p>
             A fermentação de pães usando fermento natural (sourdough) é um processo que se assemelha muito à 
             recursividade em programação. Assim como uma função recursiva chama a si mesma com parâmetros 
@@ -40,11 +43,9 @@ const BlogPostDetail = () => {
             também funciona de maneira semelhante.
           </p>
 
-          <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-chef-red my-6">
-            <h3 className="font-playfair font-semibold text-xl mb-2">Fermento Natural = Função Recursiva</h3>
-            <div className="font-sourcecode text-sm">
-              <pre className="whitespace-pre-wrap">
-{`function refreshStarter(starter) {
+          <CodeSnippet 
+            title="Fermento Natural = Função Recursiva"
+            code={`function refreshStarter(starter) {
   // Condição de parada: fermento está pronto para uso
   if (starterIsActive(starter)) {
     return starter;
@@ -59,9 +60,7 @@ const BlogPostDetail = () => {
   // Chamada recursiva com o fermento atualizado
   return refreshStarter(refreshedStarter);
 }`}
-              </pre>
-            </div>
-          </div>
+          />
 
           <p>
             Cada ciclo de alimentação do fermento natural envolve descartar uma porção do fermento existente 
@@ -79,24 +78,18 @@ const BlogPostDetail = () => {
           </p>
           
           <div className="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
-              <h4 className="font-playfair font-medium text-lg mb-2 text-chef-red">1. Inicialização</h4>
-              <p className="text-gray-600">
-                Assim como iniciamos uma variável, começamos um fermento com farinha, água e tempo.
-              </p>
-            </div>
-            <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
-              <h4 className="font-playfair font-medium text-lg mb-2 text-chef-red">2. Iteração</h4>
-              <p className="text-gray-600">
-                Alimentamos o fermento regularmente, evoluindo sua composição a cada ciclo.
-              </p>
-            </div>
-            <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
-              <h4 className="font-playfair font-medium text-lg mb-2 text-chef-red">3. Condição de Término</h4>
-              <p className="text-gray-600">
-                Quando o fermento dobra de volume em tempo previsível, está pronto para uso.
-              </p>
-            </div>
+            <BlogStep 
+              title="1. Inicialização"
+              description="Assim como iniciamos uma variável, começamos um fermento com farinha, água e tempo."
+            />
+            <BlogStep 
+              title="2. Iteração"
+              description="Alimentamos o fermento regularmente, evoluindo sua composição a cada ciclo."
+            />
+            <BlogStep 
+              title="3. Condição de Término"
+              description="Quando o fermento dobra de volume em tempo previsível, está pronto para uso."
+            />
           </div>
           
           <p>
@@ -113,12 +106,12 @@ const BlogPostDetail = () => {
             fermento, pense em como você está executando uma função recursiva biológica que resulta em 
             pães deliciosos!
           </p>
-        </div>
+        </BlogContent>
       );
     } else {
       // Conteúdo genérico para outros posts
       return (
-        <div>
+        <BlogContent>
           <p className="mb-4">
             {post.excerpt}
           </p>
@@ -130,7 +123,7 @@ const BlogPostDetail = () => {
           <p>
             Conteúdo completo do artigo ainda em desenvolvimento...
           </p>
-        </div>
+        </BlogContent>
       );
     }
   };
