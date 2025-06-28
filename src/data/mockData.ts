@@ -1,4 +1,3 @@
-
 export interface Recipe {
   id: string;
   title: string;
@@ -32,7 +31,7 @@ export const recipes: Recipe[] = [
     id: '1',
     title: 'Coq au Vin (Frango ao Vinho)',
     slug: 'coq-au-vin',
-    image: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?q=80&w=1000&auto=format&fit=crop',
+    image: 'https://images.immediate.co.uk/production/volatile/sites/30/2012/01/coq-au-vin-3740fe3.jpg?resize=1366,1242',
     cuisine: 'Francesa',
     prepTime: '30 min',
     cookTime: '1h 30 min',
@@ -54,7 +53,7 @@ export const recipes: Recipe[] = [
     id: '2',
     title: 'Feijoada Completa',
     slug: 'feijoada',
-    image: 'https://images.unsplash.com/photo-1503764654157-72d979d9af2f?q=80&w=1000&auto=format&fit=crop',
+    image: 'https://canaldareceita.com.br/wp-content/uploads/2025/05/Feijoada-Completa.jpg',
     cuisine: 'Brasileira',
     prepTime: '1h',
     cookTime: '3h',
@@ -75,7 +74,7 @@ export const recipes: Recipe[] = [
     id: '3',
     title: 'Risoto de Funghi',
     slug: 'risoto-funghi',
-    image: 'https://images.unsplash.com/photo-1633964913295-ceb43826e7c5?q=80&w=1000&auto=format&fit=crop',
+    image: 'https://melepimenta.com/wp-content/uploads/2022/04/Risoto-funghi-queijo-brie-nozes-Baixa-3.jpg.webp',
     cuisine: 'Italiana',
     prepTime: '20 min',
     cookTime: '30 min',
@@ -97,7 +96,7 @@ export const recipes: Recipe[] = [
     id: '4',
     title: 'Boeuf Bourguignon',
     slug: 'boeuf-bourguignon',
-    image: 'https://images.unsplash.com/photo-1608039755401-742074f0548d?q=80&w=1000&auto=format&fit=crop',
+    image: 'https://www.foodandwine.com/thmb/o0LBSg9aHMRlfgpl1mOcsf2hUo0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Boeuf-Bourguignon-FT-RECIPE0824-b0d7507ed8464378aedc9c1efd02adab.jpeg',
     cuisine: 'Francesa',
     prepTime: '30 min',
     cookTime: '3h',
@@ -119,7 +118,7 @@ export const recipes: Recipe[] = [
     id: '5',
     title: 'Moqueca de Peixe',
     slug: 'moqueca',
-    image: 'https://images.unsplash.com/photo-1615937657715-bc7b4b7962c1?q=80&w=1000&auto=format&fit=crop',
+    image: 'https://receitadaboa.com.br/wp-content/uploads/2024/03/iStock-1049400734.jpg',
     cuisine: 'Brasileira',
     prepTime: '30 min',
     cookTime: '40 min',
@@ -140,7 +139,7 @@ export const recipes: Recipe[] = [
     id: '6',
     title: 'Spaghetti alla Carbonara',
     slug: 'carbonara',
-    image: 'https://images.unsplash.com/photo-1600803907087-f56d462fd26b?q=80&w=1000&auto=format&fit=crop',
+    image: 'https://s2-receitas.glbimg.com/ySJaHNaO2rWc5xpMxqQdJ1RGNPo=/0x0:507x338/984x0/smart/filters:strip_icc()/s.glbimg.com/po/rc/media/2013/08/15/16_31_51_606_111648900.jpg',
     cuisine: 'Italiana',
     prepTime: '10 min',
     cookTime: '15 min',
@@ -165,7 +164,7 @@ export const blogPosts: BlogPost[] = [
     id: '1',
     title: 'Recursividade na Cozinha: O Ciclo do Pão Sourdough',
     slug: 'recursividade-pao-sourdough',
-    image: 'https://images.unsplash.com/photo-1585478259715-4d95d0a89464?q=80&w=1000&auto=format&fit=crop',
+    image: 'https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2020-01-How-to-Sourdough-Bread%2F98877-sliced-lead_How-to-make-sourdough-bread',
     date: '2023-06-15',
     author: 'DevChef',
     excerpt: 'Descubra como o processo de fermentação natural do pão sourdough é um perfeito exemplo de recursividade e processos iterativos.',
@@ -196,6 +195,6 @@ export const blogPosts: BlogPost[] = [
   }
 ];
 
-export const cuisines = ['Francesa', 'Brasileira', 'Italiana', 'Todas'];
+export const cuisines = ['Francesa', 'Brasileira', 'Italiana', ];
 export const ingredients = ['frango', 'carne bovina', 'peixe', 'feijão', 'arroz arbóreo', 'macarrão'];
 export const equipments = ['panela de pressão', 'frigideira', 'panela de barro', 'forno', 'panela de ferro'];
