@@ -205,12 +205,12 @@ A aplicação é totalmente responsiva e otimizada para:
 **EN:** If you have any questions or suggestions, feel free to reach out!
 **PT-BR:** Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato!
 
-- Email: your.email@example.com
+- Email: edulacerdaaa@gmail.com
 - GitHub: [@lacerdaaa](https://github.com/yourusername)
 - LinkedIn: [Eduardo Lacerda](https://linkedin.com/in/olacerdadev)
 
 ---
 
-**Made with ❤️ by [lacerdaaa] | Feito com ❤️ por [lacerdaaa]**
+**Made with ❤️ by lacerdaaa | Feito com ❤️ por lacerdaaa**
 
 *"Cooking code and coding recipes" | "Cozinhando código e codificando receitas"*
